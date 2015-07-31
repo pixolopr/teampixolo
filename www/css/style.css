@@ -1,0 +1,111 @@
+/* Empty. Add your own CSS if you like */
+/*.nav-bar-container{
+    color:azure !important;
+}
+.bar-header{
+    background-color: #100fff !important;
+    color: azure;
+}*/
+/*FONTS*/
+
+@font-face {
+    font-family: 'headfont';
+    src: url('../fonts/LeckerliOne.ttf');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Light.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/Roboto-Bold.tff') format('tff');
+}
+/*ROBOTO BODY FONT*/
+
+.rfont {
+    font-family: roboto !important;
+    color: rgba(68, 68, 68, 0.87) !important;
+}
+/*FONT FOR HEADER*/
+
+.hfont {
+    font-family: headfont !important;
+    color: rgba(255, 255, 255, 0.87) !important;
+}
+/*COLORs*/
+
+.hightlight {
+    background-color: #41d94d !important;
+}
+
+.indigo {
+    background-color: #3747a0 !important;
+}
+
+.listrow {
+    margin-bottom: 0px !important;
+}
+
+.listdate {
+    font-size: small;
+}
+
+.descpopup {
+    width: 90% !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-top: 50% !important;
+}
+
+.descpopup button {
+    background-color: #3F51B5;
+    color: white;
+}
+
+.descpopup button:hover {
+    background-color: #5D6DC9;
+    color: white;
+}
+/*MENU BUTTON*/
+
+.buttontrans {
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+/*MENU*/
+
+.menubase {
+    width: 275px;
+    z-index: 1;
+    top: 52px;
+    -webkit-transition: left 0.5s ease-out;
+    transition: left 0.5s ease-out;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menuin {
+    left: -275px !important;
+}
+
+.menuout {
+    left: 0px !important;
+}
+/*BUTTON STYLES*/
+
+.bottomrightbutton {
+    margin-left: 77%;
+    margin-top: 86vh;
+}
+
+.togglebutton {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    line-height: 1.5em !important;
+    color: white !important;
+}
+
+.togglebutton i:after {
+    content: "Y"
+}

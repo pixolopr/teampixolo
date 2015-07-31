@@ -1,0 +1,15 @@
+<ion-view view-title="My Tasks">
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <ul class="list">
+            <li class="item" ng-repeat="task in mytasks">
+                {{task.title}}
+            </li>
+        </ul>
+        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+    </ion-content>
+
+</ion-view>

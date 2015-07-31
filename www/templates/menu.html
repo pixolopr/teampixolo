@@ -1,0 +1,38 @@
+<ion-side-menus enable-menu-with-back-views="true" is-enabled="false" >
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" class="menubase menuin" ng-controller="mytasksCtrl" on-swipe-right="menuopen()" on-swipe-left="menuclose()">
+        <ion-content class="z-depth-1">
+            <div class="row">
+                <div class="col col-33">
+                    <img src="img/ionic.png" alt="" class="circle responsive-img">
+                    <!-- notice the "circle" class -->
+                </div>
+                <div class="col col-66">
+                    <span class="black-text">
+                Abhay Amin {{abhay}}
+              </span>
+                </div>
+            </div>
+            <ion-list>
+                <ion-item menu-close href="#/app/projects">
+                    Projects
+                </ion-item>
+                <ion-item menu-close ng-click="logout()">
+                    Logout
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,49 @@
+<ion-view view-title="My Tasks" class="hfont" style="position:fixed" on-swipe-right="menuopen()" on-swipe-left="menuclose()">
+    <ion-nav-bar class="bar-positive z-depth-1">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon icon" ng-class="{'ion-ios-keypad' : !menushow, 'ion-more' : menushow}" type="button" role="button" aria-label="Toggle Navigation" ng-click="menubuttonclick()">
+                <span class="grid"></span>
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" ng-click="closedescription()" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+    <ion-content class="rfont">
+        <ul class="list rfont">
+            <li data-target="modal1" class="item rfont modal-trigger" ng-click="showPopup()" ng-repeat="task in mytasks">
+                <div class="row listrow">
+                    <div class="col">{{$index + 1}}</div>
+                    <div class="col col-50">{{task.title}}</div>
+                    <div class="col col-25 listdate">
+                        <div style="  margin-top: -25%;">
+                            <p>5th July,</p>
+                            <p> 9:00 am</p>
+                        </div>
+                    </div>
+                    <div class="col col-10">
+                        <a href="#!" class="waves-effect waves-circle waves-light togglebutton indigo">
+                            <i class="material-icons"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+
+
+
+    </ion-content>
+    <a class="btn-floating btn-large waves-effect waves-light hightlight bottomrightbutton"><i class="material-icons">+</i></a>
+
+
+
+
+</ion-view>
